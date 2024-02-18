@@ -103,6 +103,24 @@ head --help
 - *$*: means logged in user is non-root user.  
 - *#*: means logged in user is root user.  
 
+# Linux File System
+- */*: Is the root directory.
+- */bin*: This is where most of the binaries (terminal commands) file are stored.
+- */boot*: This is where all the required files to boot the Linux OS resides.
+- */dev*: Stands for Devices. Contains device files to facilitates access to all attached devices in your device.
+- */etc*: Configuration files are stored here.
+- */home*: Each user directory are located here. except to the root user.
+- */lib*: Shared library files that are required for system boot.
+- */media*: External device are mounted here.
+- */root*: This is where root user directory resides. Root user has own folder.
+- */sbin*: This is where most of the root/ super user binaries (terminal commands) file are stored.
+- */tmp*: Temporary files are stored here and will be deleted when device shutdown or restart.
+- */usr*: Contains executables, libraries, man files, etc.
+- */var*: This is where the log files, email in-boxes, web application related files, cron files, and more are stored.
+
+###### Note: inside /usr there are also /bin and /sbin which is confusing because we already have that in / directory right. Just ignore it.
+# Philosophy
+- Everything in Linux OS is a file.
 
 # Definition of terms
 - bash: Bourne Again Shell.
