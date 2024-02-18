@@ -84,11 +84,13 @@ head --help
 - *last*: Returns the users that logged in, in your machine.
 
 # Shell prompt meaning
-Example:
+- Example:
+```
 [<username>@localhost ~] $
-~ means the root directory of the current user
-$ means logged in user is non-root user.
-'#' means logged in user is root user.
+```
+- *~*: means the root directory of the current user  
+- *$*: means logged in user is non-root user.  
+- *#*: means logged in user is root user.  
 
 
 # Definition of terms
