@@ -1,6 +1,17 @@
 # linux-notes
 Notes for Linux Operating System
 
+# Linux Distribution
+- Since Linux OS is open source, many people modified it based on their specific requirements and release it with different name. Thus resulting to different versions of Linux OS is called Linux Distributions. So basically Linux distribution is just different version of Linux OS.
+
+## Some popular linux distribution
+- Ubuntu OS
+- Kali Linux
+- Red Hat
+- Cent OS
+- Open SUSE
+- Debian
+  
 # Architecture
 - **Hardware**: CPU, Motherboard, RAM, and etc...
 
