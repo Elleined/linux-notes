@@ -77,6 +77,11 @@ head --help
 - *cd*: Change directory.
   - *cd ..*: Go back.
   - cd /path*: Go to specified path.
+- *which*: Returns the directory of the specified command.
+  ```
+  which ls
+  /usr/bin/ls
+  ```
 
 ### File and Directory Commands
 - *cp*: Copy
