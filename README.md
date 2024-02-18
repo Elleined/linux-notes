@@ -44,3 +44,8 @@ head -vn 20 // Short version
 ```
 
 ###### Note: It is important that you know the structure of command for you to read and understand what command will do and also it is important for you to know both the long and short version of options because if you dont know it sometimes its confusing as hell.
+
+# Definition of terms
+- bash: Bourne Again Shell.
+- sudo: Super User Do.
+- apt: Advance Application Tool just like maven repository and packagist.
