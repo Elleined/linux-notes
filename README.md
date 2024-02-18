@@ -83,6 +83,12 @@ head --help
 - *id*: See user details.
 - *last*: Returns the users that logged in, in your machine.
 
+## Network Commands
+- *ip a*: Returns ip address.
+- *ping*: Check connectivity to other device like server.
+  - *ping <ip_address>*
+  - *ping <domain_name>*
+
 # Shell prompt meaning
 - Example:
 ```
