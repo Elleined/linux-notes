@@ -94,6 +94,7 @@ head --help
 - *su*: Switch user.
 - *adduser*: Add user to your device.
   - Remember that when you create a user in linux it will create a user and a group based on your specified username.
+- *userdel*: Delete a user
 
 ## Network Commands
 - *ip a*: Returns ip address.
