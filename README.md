@@ -78,10 +78,15 @@ head --help
   - *cd ..*: Go back.
   - cd /path*: Go to specified path.
 
+### File and Directory Commands
+- *cp*: Copy
+- *mv*: Move
+
 ## Users Commands
 - *whoami*: Returns the current user.
 - *id*: See user details.
 - *last*: Returns the users that logged in, in your machine.
+- *su*: Switch user.
 
 ## Network Commands
 - *ip a*: Returns ip address.
