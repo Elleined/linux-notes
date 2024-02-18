@@ -92,6 +92,8 @@ head --help
 - *id*: See user details.
 - *last*: Returns the users that logged in, in your machine.
 - *su*: Switch user.
+- *adduser*: Add user to your device.
+  - Remember that when you create a user in linux it will create a user and a group based on your specified username.
 
 ## Network Commands
 - *ip a*: Returns ip address.
