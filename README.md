@@ -73,6 +73,23 @@ head --help
 - *cat*: Read a file.
 
 ## Directory Commands
+- *pwd*: Returns your current directory.
+- *cd*: Change directory.
+  - *cd ..*: Go back.
+  - cd /path*: Go to specified path.
+
+## Users Commands
+- *whoami*: Returns the current user.
+- *id*: See user details.
+- *last*: Returns the users that logged in, in your machine.
+
+# Shell template meaning
+Example:
+[<username>@localhost ~] $
+~ means the root directory of the current user
+$ means logged in user is non-root user.
+'#' means logged in user is root user.
+
 
 # Definition of terms
 - bash: Bourne Again Shell.
