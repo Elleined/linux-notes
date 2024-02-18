@@ -83,7 +83,7 @@ head --help
 - *id*: See user details.
 - *last*: Returns the users that logged in, in your machine.
 
-# Shell template meaning
+# Shell prompt meaning
 Example:
 [<username>@localhost ~] $
 ~ means the root directory of the current user
