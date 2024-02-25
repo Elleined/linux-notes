@@ -30,7 +30,7 @@ command
   [-option(s)
     [optionArgument(s)]
   ]
-  [argument(s)]
+  [commandArgument(s)]
 ```
 
 ## Options
