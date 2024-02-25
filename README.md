@@ -80,7 +80,7 @@ head --help
 - *which*: Returns the directory of the specified command.
   ```
   which ls
-  /usr/bin/ls
+  returns /usr/bin/ls
   ```
 
 ### File and Directory Commands
@@ -95,12 +95,32 @@ head --help
 - *adduser*: Add user to your device.
   - Remember that when you create a user in linux it will create a user and a group based on your specified username.
 - *userdel*: Delete a user
+- *usermod: Stands for user modification.
+
+## Group Commands
+- *addgroup*: Create a group.
+- *groupdel*: Delete a group.
+
+## Group and User Commands
+- Add user to the group
+  ```
+  usermod -aG <groupName> <userName>
+  ```
+- Remove user to the group
+  ```
+  gpasswrd <userName> <groupName>
+  ```
 
 ## Network Commands
 - *ip a*: Returns ip address.
 - *ping*: Check connectivity to other device like server.
   - *ping <ip_address>*
   - *ping <domain_name>*
+ 
+## Other commands
+- *visudo*: Opens the sudoers file, sudoers file contains the users that can execute the sudo command.
+
+
 
 # Shell prompt meaning
 - Example:
@@ -133,4 +153,4 @@ head --help
 # Definition of terms
 - bash: Bourne Again Shell.
 - sudo: Super User Do.
-- apt: Advance Application Tool just like maven repository and packagist.
+- apt: Advance Application Tool just like maven repository in java ,packagist in php, and npm in javascript.
