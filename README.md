@@ -116,11 +116,26 @@ head --help
 - *ping*: Check connectivity to other device like server.
   - *ping <ip_address>*
   - *ping <domain_name>*
- 
+
+# Service Manager/ Master Daemon / systemd Commands
+- *ps -aux*: Will list all daemon processes in your system. ps stands for process.
+  
+- *systemctl start <daemonName>*: Start the specified daemon.
+  
+- *systemctl stop <daemonName>*: Stop the specified daemon.
+  
+- *systemctl restart <daemonName>*: Restsrt the specified daemon.
+  
+- *systemctl reload<daemonName>*: Reload the specified daemon it will not restart the daemon it will just reload the daemon configurations.
+  
+- *systemctl enable <daemonName>*: Specified daemon will automatically start when your system boots.
+  
+- *systemctl disable <daemonName>*: Specified daemon will not automatically start when your systems boots.
+  
+- *systemctl status <daemonName>*: Check the status of specified daemon.
+
 ## Other commands
 - *visudo*: Opens the sudoers file, sudoers file contains the users that can execute the sudo command.
-
-
 
 # Shell prompt meaning
 - Example:
@@ -147,6 +162,25 @@ head --help
 - */var*: This is where the log files, email in-boxes, web application related files, cron files, and more are stored.
 
 ###### Note: inside /usr there are also /bin and /sbin which is confusing because we already have that in / directory right. Just ignore it.
+
+# What is Daemon
+- Daemon word come from geek methology which is an entity that neither good or evil it is just an entity doing his job in the background so that everything works fine as expected hence linux developers called the background tasks or processes Daemon.
+
+- Daemons is the processes/ background tasks/ background process that starts automatically by your system for you to use the applications/ services smoothly for example printing daemons and networking daemons they are running some background tasks/ processes for us to use them when needed. Basically it is a process that we usually don't care about.
+
+- Just like in windows background tasks/ processes is called services in linux is it called Daemons.
+
+- Just like in windows the Services UI where all the process is visible. unlike linux there are no UI for them we use commands only and nothing is diifferent between windows and linux about these concepts of background tasks and processes.
+
+### How to spot a Daemon
+- Daemon usually ends with a letter 'd' which stands for daemon for example the ssh daemon is called "sshd".
+
+### How to work with Daemons.
+- For us to manage or work with daemons we only allowed to talk with *master daemon/ service manager* or also called as "systemd" that is also a daemon. "systemd" is a first daemon to start when we boot our linux system and also responsible for starting other daemons which is called forking.
+
+### How to interact with Master Daemon or Service Manager
+- To interact with *systemd* we use the command called "systemctl" which stands for "system control". commands for theses is in command section of this readme file.
+  
 # Philosophy
 - Everything in Linux OS is a file.
 
@@ -155,3 +189,4 @@ head --help
 - sudo: Super User Do.
 - apt: Advance Application Tool just like maven repository in java ,packagist in php, and npm in javascript.
 - daemon: is same as and also called service, unit, background process, and background task
+- master daemon: is same as and also called as service manager and systemd.
