@@ -154,3 +154,4 @@ head --help
 - bash: Bourne Again Shell.
 - sudo: Super User Do.
 - apt: Advance Application Tool just like maven repository in java ,packagist in php, and npm in javascript.
+- daemon: is same as and also called service, unit, background process, and background task
