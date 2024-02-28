@@ -136,6 +136,23 @@ head --help
 
 ## Other commands
 - *visudo*: Opens the sudoers file, sudoers file contains the users that can execute the sudo command.
+- *alias*: Will create an alias to a command.
+  ```
+  alias <your_custom_command> = "<real_command>"
+
+  alias al = "ls -al"
+  ```
+
+## Useful shortcut keys
+- ctrl + a: Your cursor will go the beginning of the line.
+  
+- ctrl + u: Clear everything before your cursor.
+- ctrl + k: Clear everything after your cursor.
+- ctrl + y: Paste deleted content.
+
+- ctrl + l: Clear screen
+- !!: Double exclamation point will run the last executed command.
+- tab + tab: Will help and list all possible commands that you can execute in your current command.
 
 # Shell prompt meaning
 - Example:
@@ -178,6 +195,9 @@ head --help
 ### How to work with Daemons.
 - For us to manage or work with daemons we only allowed to talk with *master daemon/ service manager* or also called as "systemd" that is also a daemon. "systemd" is a first daemon to start when we boot our linux system and also responsible for starting other daemons which is called forking.
 
+### Difference between Foreground process and Background process
+- Background process is the processes that we dont see it is a daemon. Meanwhile the foreground process is the process that we can see in screen and can be interrupted anytime we want unlike background process we need to execute a command just to stop it.
+
 ### How to interact with Master Daemon or Service Manager
 - To interact with *systemd* we use the command called "systemctl" which stands for "system control". commands for theses is in command section of this readme file.
   
@@ -190,3 +210,5 @@ head --help
 - apt: Advance Application Tool just like maven repository in java ,packagist in php, and npm in javascript.
 - daemon: is same as and also called service, unit, background process, and background task
 - master daemon: is same as and also called as service manager and systemd.
+- grep: Stands for Global Regular Expression Print.
+- curl: Client URL(Universal Resource Locator).
