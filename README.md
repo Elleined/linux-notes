@@ -216,15 +216,31 @@ head --help
 # SSH
 ## Securing SSH
 - Change default port
-- Disable username password authentication and use ssh ket instea
+Port 2222
+
+- Disable username password authentication and use ssh ket instead
+PasswordAuthentication no
+
 - Disable root login
+PermitRootLogin no
+
 - Set timeout interval: Set inactivity time-out to auto-disconnect SSH clients
+ClientAliveInterval 300
+ClientAliveCountMax 3
+
 - Set max authentication attempls: To prevent brute force attacks
+MaxAuthTries 3
+
 - Set connection attempts: A rate limiting to prevent DDoS attackes
+MaxStartups 10:30:60
+
 - Add login grace time: Set a time limit for  the user to enter authentication credentials.
+LoginGraceTime 30
+
 - Remove other authentication method if not needed commonly the ssh key is the most used other methods are not used.
+
 - Disable empty passwords
-- Disable
+PermitEmptyPasswords no
 
 ### SSH Commands
 - Test ssh config
