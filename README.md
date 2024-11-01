@@ -244,6 +244,16 @@ scp -r <source> <destination>
 scp -r /home/localUser/test.txt remoteUser@remoteIpAddress:/home/remoteUser/test.txt
 ```
 
+- Connect via SSH key (Use this if the UsernamePasswordAuthentication are disabled in ssh)
+  - Run this in your remote computer
+  ```
+  ssh-keygen
+  ```
+  - Copy the public key in your server. This is just sample the file you will copy it will be shown after you run the ssh-keygen  basically the file you will copy is the one with .pub extension
+  ```
+  scp C:\Users\Elleined/.ssh/id_ed25519.pub remoteUser@remoteIpAddress:~/.ssh/authorized_keys
+  ```
+
 ### Articles for more info
 https://www.linkedin.com/pulse/fortify-your-ubuntu-server-beginners-guide-ssh-mads-akselsen-xrvoe
 https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-20-04
