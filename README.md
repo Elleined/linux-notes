@@ -273,3 +273,48 @@ scp -r /home/localUser/test.txt remoteUser@remoteIpAddress:/home/remoteUser/test
 ### Articles for more info
 https://www.linkedin.com/pulse/fortify-your-ubuntu-server-beginners-guide-ssh-mads-akselsen-xrvoe
 https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-20-04
+
+# Change IP Address
+1. Show interface
+```
+ip a
+```
+
+2. Show IP Address
+```
+Template:
+ip -c addr show dev <Interface>
+
+Example:
+ip -c addr show dev enp4s0
+```
+
+3. Check network config file
+- The file that will show that is the network config file regardless of the name.
+```
+ls -l /etc/netplan
+```
+
+4. Open network config file
+```
+Template:
+sudo nano /etc/netplan/<.yaml-file-above>
+
+Example:
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+5. Your network config file should look like this.
+![IMG_20241031_160957](https://github.com/user-attachments/assets/18beb308-83d8-4a26-b92f-dc127e686a59)
+
+
+### Addresses is the static ip you want
+### Routes is the ip address of your physical router (Default gateway)
+### 8.8.8.8 and 8.8.4.4 is the google DNS
+
+6. Apply the changes with
+```
+sudo netplan apply
+```
+
+7. Rerun the 2nd step your ip address should not have the dynamic word.
