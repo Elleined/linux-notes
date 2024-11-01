@@ -237,11 +237,11 @@ sudo sshd -t
 w
 ```
 
-- Copy files via SSH
+- Copy files via SSH local to remote
 ```
 scp -r <source> <destination>
 
-scp -r /home/sampleUser/test.txt remoteUser@remoteIpAddress:/home/remoteUser/test.txt
+scp -r /home/localUser/test.txt remoteUser@remoteIpAddress:/home/remoteUser/test.txt
 ```
 
 ### Articles for more info
