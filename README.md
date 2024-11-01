@@ -212,3 +212,30 @@ head --help
 - master daemon: is same as and also called as service manager and systemd.
 - grep: Stands for Global Regular Expression Print.
 - curl: Client URL(Universal Resource Locator).
+
+# SSH
+## Securing SSH
+- Change default port
+- Disable username password authentication and use ssh ket instea
+- Disable root login
+- Set timeout interval: Set inactivity time-out to auto-disconnect SSH clients
+- Set max authentication attempls: To prevent brute force attacks
+- Set connection attempts: A rate limiting to prevent DDoS attackes
+- Add login grace time: Set a time limit for  the user to enter authentication credentials.
+- Remove other authentication method if not needed commonly the ssh key is the most used other methods are not used.
+- Disable empty passwords
+- Disable
+
+- Test ssh config
+```
+sudo sshd -t
+```
+
+- List all ssh connected to your server
+```
+w
+```
+
+### Articles for more info
+https://www.linkedin.com/pulse/fortify-your-ubuntu-server-beginners-guide-ssh-mads-akselsen-xrvoe
+https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-20-04
