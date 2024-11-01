@@ -226,6 +226,7 @@ head --help
 - Disable empty passwords
 - Disable
 
+### SSH Commands
 - Test ssh config
 ```
 sudo sshd -t
@@ -234,6 +235,13 @@ sudo sshd -t
 - List all ssh connected to your server
 ```
 w
+```
+
+- Copy files via SSH
+```
+scp -r <source> <destination>
+
+scp -r /home/sampleUser/test.txt remoteUser@remoteIpAddress:/home/remoteUser/test.txt
 ```
 
 ### Articles for more info
