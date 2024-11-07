@@ -218,6 +218,9 @@ head --help
 - Change default port
 Port 2222
 
+- Only user ipv4
+AddressFamily inet
+
 - Disable username password authentication and use ssh ket instead
 PasswordAuthentication no
 
@@ -323,33 +326,33 @@ sudo netplan apply
 # Configure linux server
 # Apps
 - Jenkins (8080)
-  -- Install Java LTS First
-  -- Allow ufw
-  -- add docker credential
-  -- add githin credential
+  -- Install Java LTS First  
+  -- Allow ufw  
+  -- add docker credential  
+  -- add githin credential  
 
 - Docker
-  -- Make docker run without a sudo
-  -- install credential helper secretservice
+  -- Make docker run without a sudo  
+  -- install credential helper secretservice  
 
 - Java LTS
 
 - SSH (22)
-  -- Allow ufw
-  -- Secure ssh configs
-  -- ssh key
+  -- Allow ufw  
+  -- Secure ssh configs  
+  -- ssh key  
 
 - unattended-upgrades
 
 - Cockpit (9090)
-  -- allow ufw
+  -- allow ufw  
 
 - lynis
 
 - MySQL server (3306)
-  -- Allow remote connections (check sql-notes)
-  -- Allow ufw
-  -- Make mysql run without sudo
+  -- Allow remote connections (check sql-notes)  
+  -- Allow ufw  
+  -- Make mysql run without sudo  
 
 ## Always allow in the firewall their ports
 ```
